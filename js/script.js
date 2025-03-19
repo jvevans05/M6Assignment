@@ -27,6 +27,10 @@ dept    = domID('department')
 //make an event listener for the form instead of the add button
 form.submit.addEventListener('click', function(e) {
     e.preventDefault()
+
+    //possible alternative, but the extra call is inefficient.
+    //console.log( domID('id').name, ': ', domID('id').value)
+
     console.log(eid.name, ': ', eid.value)
     console.log(eName.name, ': ', eName.value)
     console.log(ext.name, ': ', ext.value)
